@@ -352,6 +352,10 @@ persistentVolumeClaimRetentionPolicy:
   whenScaled: Retain
   whenDeleted: Retain
 
+## persistentVolumeClaimWaitUntilBound
+## @param persistentVolumeClaimWaitUntilBound controls wait_until_bound in the terraform PVC. Useful when running in environments where PVC binding is set as WaitForFirstConsumer in an managed Kubernetes system such as SAP BTP Kyma. Defaults to true.
+persistentVolumeClaimWaitUntilBound: true
+
 ## Init containers parameters:
 ## volumePermissions: Change the owner of the persist volume mountpoint to RunAsUser:fsGroup
 ##
