@@ -471,6 +471,6 @@ spec:
           {{- toYaml .Values.persistence.matchExpressions | nindent 12 }}
         {{- end -}}
         {{- end }}
-        wait_until_bound: {{ .Values.persistence.waitUntilBound }}
+        wait_until_bound: {{ .Values.persistentVolumeClaimWaitUntilBound }}
   {{- end }}
 {{- end }}
